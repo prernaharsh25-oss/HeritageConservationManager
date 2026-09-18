@@ -196,9 +196,9 @@ The database contains three main tables:
 - conservation_tasks
 
 The database schema is provided in:
-
+```
 sql/schema.sql
-
+```
 A heritage site can have multiple inspections and multiple conservation tasks.
 
 ---
