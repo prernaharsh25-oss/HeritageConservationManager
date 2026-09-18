@@ -199,27 +199,9 @@ The database schema is provided in:
 
 sql/schema.sql
 
-### Database Relationships
-
-heritage_sites
-      |
-      | 1
-      |
-      | N
-      v
-inspections
-
-heritage_sites
-      |
-      | 1
-      |
-      | N
-      v
-conservation_tasks
-
 A heritage site can have multiple inspections and multiple conservation tasks.
 
-
+---
 
 ## 7. Installation and Setup
 
