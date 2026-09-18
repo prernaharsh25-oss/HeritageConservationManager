@@ -13,8 +13,6 @@ public class Main {
     private static final InspectionDAO inspectionDAO = new InspectionDAO();
     private static final ConservationTaskDAO taskDAO = new ConservationTaskDAO();
     private static final ReportGenerator reportGenerator = new ReportGenerator();
-
-    // In-memory cache: Site ID -> HeritageSite, refreshed after DB writes.
     private static final Map<String, HeritageSite> siteCache = new HashMap<>();
 
     public static void main(String[] args) {
@@ -301,7 +299,7 @@ public class Main {
             System.out.print("Assigned To: ");
             String assignedTo = readLine();
 
-            // New tasks always start as PENDING.
+            
             ConservationTask task = new ConservationTask(
                     taskId, siteId, issue, action, priority, "PENDING", assignedTo);
             taskDAO.addTask(task);
@@ -390,10 +388,7 @@ public class Main {
     // HELPERS
     // ==========================================================
 
-    /**
-     * Looks up a site by ID via the DAO (source of truth) and refreshes
-     * the in-memory cache entry. Throws SiteNotFoundException if missing.
-     */
+    
     private static HeritageSite findSiteOrThrow(String siteId) throws SQLException, SiteNotFoundException {
         HeritageSite site = siteDAO.findById(siteId);
         if (site == null) {
