@@ -4,7 +4,7 @@
 
 The Heritage Conservation Manager is a Java-based console application designed to organize and manage information related to heritage sites and their conservation activities.
 
-The application allows users to register heritage sites, record inspections, track conservation tasks, and generate text-based reports. The project uses MySQL as the database and JDBC for communication between the Java application and the database.
+The application allows users to register heritage sites,record inspections, track conservation tasks, and generate text-based reports. The project uses MySQL as the database and JDBC for communication between the Java application and the database.
 
 The project demonstrates core Java programming concepts including Object-Oriented Programming, Collections, Exception Handling, File I/O, and JDBC database connectivity.
 
@@ -72,29 +72,26 @@ Supported priorities:
 - Git and GitHub
 
 ---
-
 ## 4. Project Structure
 
-`text
+The project is organized as follows:
+
+```bash
 HeritageConservationManager/
-│
 ├── .vscode/
-│
+│   └── settings.json
 ├── out/
-│
 ├── reports/
-│
 ├── sql/
 │   └── schema.sql
-│
 ├── src/
 │   ├── dao/
 │   │   ├── ConservationTaskDAO.java
 │   │   ├── HeritageSiteDAO.java
 │   │   └── InspectionDAO.java
-│   │
 │   ├── exception/
-│   │
+│   │   ├── InvalidDataException.java
+│   │   └── SiteNotFoundException.java
 │   ├── model/
 │   │   ├── ConservationTask.java
 │   │   ├── Conservator.java
@@ -103,64 +100,45 @@ HeritageConservationManager/
 │   │   ├── Inspector.java
 │   │   ├── Reportable.java
 │   │   └── Staff.java
-│   │
 │   ├── util/
 │   │   ├── DatabaseConnection.java
 │   │   └── ReportGenerator.java
-│   │
 │   └── Main.java
-│
+├── .gitignore
+├── README.md
+└── statement.mdHeritageConservationManager/
+├── .vscode/
+│   └── settings.json
+├── out/
+├── reports/
+├── sql/
+│   └── schema.sql
+├── src/
+│   ├── dao/
+│   │   ├── ConservationTaskDAO.java
+│   │   ├── HeritageSiteDAO.java
+│   │   └── InspectionDAO.java
+│   ├── exception/
+│   │   ├── InvalidDataException.java
+│   │   └── SiteNotFoundException.java
+│   ├── model/
+│   │   ├── ConservationTask.java
+│   │   ├── Conservator.java
+│   │   ├── HeritageSite.java
+│   │   ├── Inspection.java
+│   │   ├── Inspector.java
+│   │   ├── Reportable.java
+│   │   └── Staff.java
+│   ├── util/
+│   │   ├── DatabaseConnection.java
+│   │   └── ReportGenerator.java
+│   └── Main.java
+├── .gitignore
 ├── README.md
 └── statement.md
+```
 
-## 5. Project Flow
-
-The application follows this basic flow:
-
-User
-  |
-  v
-Main.java
-  |
-  v
-Application Menu
-  |
-  +---- Heritage Site Management
-  |
-  +---- Inspection Management
-  |
-  +---- Conservation Task Management
-  |
-  +---- Report Generation
-  |
-  v
-DAO Layer
-  |
-  v
-JDBC
-  |
-  v
-MySQL Database
-
-For report generation:
-
-MySQL Database
-      |
-      v
-JDBC / DAO
-      |
-      v
-Java Objects
-      |
-      v
-ReportGenerator
-      |
-      v
-.txt Report
-
----
-
-## 6. Java Concepts Demonstrated
+## 5. Java Concepts Demonstrated
 
 ### Object-Oriented Programming
 
@@ -205,7 +183,7 @@ The DAO layer performs database operations through JDBC.
 
 ---
 
-## 7. Database
+## 6. Database
 
 The project uses a MySQL database named:
 
@@ -241,9 +219,9 @@ conservation_tasks
 
 A heritage site can have multiple inspections and multiple conservation tasks.
 
----
 
-## 8. Installation and Setup
+
+## 7. Installation and Setup
 
 ### Prerequisites
 
@@ -295,7 +273,7 @@ The application starts in the terminal with the main menu.
 
 ---
 
-## 9. Testing Instructions
+## 8. Testing Instructions
 
 The following operations can be used to test the application.
 
@@ -357,7 +335,7 @@ The following operations can be used to test the application.
 ---
 
 
-## 10. Screenshots
+## 9. Screenshots
 
 Screenshots demonstrating the application's execution and database operations can be added here.
 
