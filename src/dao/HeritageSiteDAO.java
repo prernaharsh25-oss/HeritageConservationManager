@@ -5,18 +5,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * HeritageSiteDAO.java
- *
- * All JDBC operations for the heritage_sites table: add, view all,
- * search by ID, and existence checks. Uses PreparedStatement throughout
- * and try-with-resources for connections/statements/result sets.
- */
 public class HeritageSiteDAO {
-
-    /**
-     * Inserts a new heritage site record.
-     */
     public void addSite(HeritageSite site) throws SQLException {
         String sql = "INSERT INTO heritage_sites "
                 + "(site_id, name, location, type, historical_period, current_condition) "
@@ -35,9 +24,6 @@ public class HeritageSiteDAO {
         }
     }
 
-    /**
-     * Returns all heritage sites, ordered by site_id.
-     */
     public List<HeritageSite> getAllSites() throws SQLException {
         List<HeritageSite> sites = new ArrayList<>();
         String sql = "SELECT site_id, name, location, type, historical_period, current_condition "
@@ -54,11 +40,6 @@ public class HeritageSiteDAO {
         return sites;
     }
 
-    /**
-     * Finds a single heritage site by its ID.
-     *
-     * @return the matching HeritageSite, or null if not found
-     */
     public HeritageSite findById(String siteId) throws SQLException {
         String sql = "SELECT site_id, name, location, type, historical_period, current_condition "
                 + "FROM heritage_sites WHERE site_id = ?";
@@ -76,9 +57,6 @@ public class HeritageSiteDAO {
         return null;
     }
 
-    /**
-     * Checks whether a site with the given ID already exists.
-     */
     public boolean exists(String siteId) throws SQLException {
         return findById(siteId) != null;
     }
