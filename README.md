@@ -364,10 +364,13 @@ Screenshots demonstrating the application's execution and database operations ca
 Recommended screenshots include:
 
 - Main application menu
+  ![Main menu](screenshots/main menu.png)
 - Heritage site added successfully
 - View all heritage sites
    ![Heritage Site Management](screenshots/heritage-site.png)
 - Inspection record
+  ![Inspection Management](screenshots/inspection.png)
 - Conservation task
+  ![Conservation Task Management](screenshots/tasks.png)
 - Generated report
 - MySQL database tables
