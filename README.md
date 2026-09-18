@@ -357,14 +357,14 @@ The following operations can be used to test the application.
 ---
 
 
-## 11. Screenshots
+## 10. Screenshots
 
 Screenshots demonstrating the application's execution and database operations can be added here.
 
 Recommended screenshots include:
 
 - Main application menu
-  ![Main menu](screenshots/main menu.png)
+  ![Main menu](screenshots/main-menu.png)
 - Heritage site added successfully
 - View all heritage sites
    ![Heritage Site Management](screenshots/heritage-site.png)
