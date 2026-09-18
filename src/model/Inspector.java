@@ -1,8 +1,4 @@
-/**
- * Inspector.java
- *
- * Staff subtype representing a person who carries out site inspections.
- */
+
 public class Inspector extends Staff {
 
     private String specialization;
