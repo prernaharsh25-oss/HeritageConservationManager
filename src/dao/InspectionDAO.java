@@ -6,17 +6,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * InspectionDAO.java
- *
- * JDBC operations for the inspections table: recording a new inspection
- * and retrieving inspection history for a given site.
- */
 public class InspectionDAO {
-
-    /**
-     * Inserts a new inspection record.
-     */
+     
     public void addInspection(Inspection inspection) throws SQLException {
         String sql = "INSERT INTO inspections "
                 + "(inspection_id, site_id, inspector_name, inspection_date, inspection_condition, issues_found, remarks) "
@@ -36,9 +27,6 @@ public class InspectionDAO {
         }
     }
 
-    /**
-     * Returns the full inspection history for a given site, most recent first.
-     */
     public List<Inspection> getInspectionsBySite(String siteId) throws SQLException {
         List<Inspection> inspections = new ArrayList<>();
         String sql = "SELECT inspection_id, site_id, inspector_name, inspection_date, "
@@ -58,9 +46,6 @@ public class InspectionDAO {
         return inspections;
     }
 
-    /**
-     * Checks whether a given inspection ID is already in use.
-     */
     public boolean exists(String inspectionId) throws SQLException {
         String sql = "SELECT inspection_id FROM inspections WHERE inspection_id = ?";
         try (Connection conn = DatabaseConnection.getConnection();
