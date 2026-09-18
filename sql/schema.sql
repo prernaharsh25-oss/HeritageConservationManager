@@ -1,6 +1,3 @@
--- schema.sql
--- Database schema for the Heritage Conservation Manager.
--- Run this once in MySQL before starting the application.
 
 CREATE DATABASE IF NOT EXISTS heritage_conservation;
 USE heritage_conservation;
