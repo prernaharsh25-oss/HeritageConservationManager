@@ -1,12 +1,4 @@
-/**
- * ConservationTask.java
- *
- * Model class representing a conservation task raised for an issue
- * found at a heritage site.
- *
- * Allowed status values : PENDING, IN PROGRESS, COMPLETED
- * Allowed priority values: LOW, MEDIUM, HIGH
- */
+
 public class ConservationTask {
 
     public static final String[] VALID_STATUSES = {"PENDING", "IN PROGRESS", "COMPLETED"};
@@ -71,9 +63,7 @@ public class ConservationTask {
         this.priority = priority;
     }
 
-    /**
-     * Utility used by validation code to check a status value.
-     */
+    
     public static boolean isValidStatus(String value) {
         for (String s : VALID_STATUSES) {
             if (s.equalsIgnoreCase(value)) {
@@ -83,9 +73,6 @@ public class ConservationTask {
         return false;
     }
 
-    /**
-     * Utility used by validation code to check a priority value.
-     */
     public static boolean isValidPriority(String value) {
         for (String p : VALID_PRIORITIES) {
             if (p.equalsIgnoreCase(value)) {
