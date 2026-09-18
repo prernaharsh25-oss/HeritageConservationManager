@@ -332,5 +332,4 @@ Recommended screenshots include:
   ![Inspection Management](screenshots/inspection.png)
 - Conservation task
   ![Conservation Task Management](screenshots/tasks.png)
-- Generated report
-- MySQL database tables
+
