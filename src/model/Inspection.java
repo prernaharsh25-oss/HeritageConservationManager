@@ -1,16 +1,10 @@
-/**
- * Inspection.java
- *
- * Model class representing a single inspection recorded against a
- * HeritageSite. Implements Reportable so it can produce its own
- * report fragment.
- */
+
 public class Inspection implements Reportable {
 
     private String inspectionId;
     private String siteId;
     private String inspectorName;
-    private String date; // stored as ISO string (yyyy-MM-dd) for simplicity
+    private String date; 
     private String condition;
     private String issuesFound;
     private String remarks;
@@ -26,7 +20,7 @@ public class Inspection implements Reportable {
         this.remarks = remarks;
     }
 
-    // ---------- Getters ----------
+    // getters
 
     public String getInspectionId() {
         return inspectionId;
