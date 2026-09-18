@@ -1,9 +1,4 @@
-/**
- * HeritageSite.java
- *
- * Model class representing a single heritage site. Implements Reportable
- * so that a report fragment can be generated directly from the object.
- */
+
 public class HeritageSite implements Reportable {
 
     private String siteId;
@@ -23,7 +18,7 @@ public class HeritageSite implements Reportable {
         this.condition = condition;
     }
 
-    // ---------- Getters ----------
+
 
     public String getSiteId() {
         return siteId;
@@ -48,8 +43,6 @@ public class HeritageSite implements Reportable {
     public String getCondition() {
         return condition;
     }
-
-    // ---------- Setters (encapsulation with simple validation) ----------
 
     public void setName(String name) {
         if (name != null && !name.trim().isEmpty()) {
