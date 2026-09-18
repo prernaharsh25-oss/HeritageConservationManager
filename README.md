@@ -366,6 +366,7 @@ Recommended screenshots include:
 - Main application menu
 - Heritage site added successfully
 - View all heritage sites
+   ![Heritage Site Management](screenshots/heritage-site.png)
 - Inspection record
 - Conservation task
 - Generated report
