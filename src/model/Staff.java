@@ -1,10 +1,4 @@
-/**
- * Staff.java
- *
- * Abstract parent class holding fields and behavior common to all staff
- * members involved in heritage conservation work. Concrete subtypes are
- * Inspector and Conservator.
- */
+
 public abstract class Staff {
 
     private String id;
@@ -28,11 +22,7 @@ public abstract class Staff {
             this.name = name;
         }
     }
-
-    /**
-     * Each staff subtype describes its own role. This is overridden
-     * polymorphically by Inspector and Conservator.
-     */
+  
     public abstract String getRole();
 
     @Override
