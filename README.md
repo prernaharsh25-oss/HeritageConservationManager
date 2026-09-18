@@ -226,20 +226,19 @@ Open the HeritageConservationManager folder in Visual Studio Code.
 ### Step 3 — Create the Database
 
 Open MySQL Workbench and execute:
-
+```
 sql/schema.sql
+```
 
 This creates the required database and tables.
 
-### Step 4 — Configure Database Connection
+## Step 4 — Configure Database Connection
 
 Open:
 
+```text
 src/util/DatabaseConnection.java
-
-Update the database username and password to match the local MySQL installation.
-
-Do not commit personal database passwords to GitHub.
+```
 
 ### Step 5 — Add MySQL Connector/J
 
@@ -248,9 +247,9 @@ Make sure the MySQL Connector/J .jar file is available to the Java project class
 ### Step 6 — Run the Application
 
 Run:
-
+```
 src/Main.java
-
+```
 The application starts in the terminal with the main menu.
 
 ---
