@@ -2,9 +2,9 @@
 
 ## 1. Problem Statement
 
-Heritage monuments are valuable cultural and historical assets that require regular inspection and proper conservation planning. However, inspection information, identified issues, and conservation activities can become difficult to organize when they are maintained manually or across separate records.
+Heritage monuments are valuable cultural and historical assets that require regular inspection and proper conservation planning. However,inspection information, identified issues,and conservation activities can become difficult to organize when they are maintained manually or across separate records.
 
-The Heritage Conservation Manager is a Java-based application designed to provide a structured way to manage heritage sites, record their inspection history, and track conservation tasks. The system stores the information in a MySQL database using JDBC, allowing the records to be maintained and retrieved systematically.
+The Heritage Conservation Manager is a Java-based application designed to provide a structured way to manage heritage sites ,record their inspection history , and track conservation tasks. The system stores the information in a MySQL database using JDBC, allowing the records to be maintained and retrieved systematically.
 
 ---
 
